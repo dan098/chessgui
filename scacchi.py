@@ -34,7 +34,7 @@ for piece in ['p', 'r', 'n', 'b', 'q', 'k']:
 board = chess.Board()
 
 # Inizializzazione del motore Stockfish
-engine = chess.engine.SimpleEngine.popen_uci("./stockfish-ubuntu-avx2")
+engine = chess.engine.SimpleEngine.popen_uci("./stockfish-ubuntu-avx2") # place the stockfish executable path here !!!
 
 def draw_board():
     """
