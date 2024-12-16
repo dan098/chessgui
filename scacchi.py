@@ -27,8 +27,8 @@ SQUARE_SIZE = 80
 # Caricamento delle immagini dei pezzi
 PIECES = {}
 for piece in ['p', 'r', 'n', 'b', 'q', 'k']:
-    PIECES[piece] = pygame.transform.scale(pygame.image.load(f"pieces/b{piece}.png"), (SQUARE_SIZE, SQUARE_SIZE))
-    PIECES[piece.upper()] = pygame.transform.scale(pygame.image.load(f"pieces/w{piece}.png"), (SQUARE_SIZE, SQUARE_SIZE))
+    PIECES[piece] = pygame.transform.scale(pygame.image.load(f"pieces/b{piece}.upper().png"), (SQUARE_SIZE, SQUARE_SIZE))
+    PIECES[piece.upper()] = pygame.transform.scale(pygame.image.load(f"pieces/w{piece}.upper().png"), (SQUARE_SIZE, SQUARE_SIZE))
 
 # Inizializzazione della scacchiera
 board = chess.Board()
